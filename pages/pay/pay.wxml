@@ -1,0 +1,43 @@
+<view class="cart">
+  <view class="user-info">
+    <view class="name-info">
+      <view class="name">收货人:{{address.userName}}</view>
+      <view class="phone">{{address.telNumber}}</view>
+    </view>
+    <view class="add-info">
+      {{address.all}}
+    </view>
+  </view>
+</view>
+
+<view class="cart-content">
+  <view class="cart-title">购物车</view>
+  <view class="cart-main">
+     <view class="cart-item" wx:for="{{cart}}" wx:key="goods_id">
+        <navigator class="cart-img-wrap">
+          <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+        </navigator>
+        <view class="cart-info-wrap">
+          <view class="goods-name">{{item.goods_name}}</view>
+          <view class="goods-price-wrap">
+            <view class="goods-price">¥{{item.goods_price}}</view>
+            <view class="cart-num-tool">
+              <view class="num">x{{item.num}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>
+
+<view class="footer-tool">
+  <view class="total-price-wrap">
+    <view class="total-price">
+      合计:<text class="price-text">{{totalPrice}}</text>
+    </view>
+    <view class="pay">包含运费</view>
+  </view>
+  <view class="order-pay-wrap" bindtap="handlePay">
+    支付({{totalNum}})
+  </view>
+</view>

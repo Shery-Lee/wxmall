@@ -1,0 +1,17 @@
+<!--pages/goods-item/goods-item.wxml-->
+<searchInput></searchInput>
+<tabs tabs="{{tabs}}" bind:tabsclick = "tabsclick">
+  <block wx:if="tabs[0].isActive">
+    <view class="first-tab">
+      <navigator hover-class="none" class="goods-item" wx:for="{{goods}}" wx:key="index" url="/pages/goods-detail/goods-detail?goods_id={{item.goods_id}}">
+        <view class="left-image">
+          <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'../../asserts/img/1.jpg'}}"></image>
+        </view>
+        <view class="right-content">
+          <view class="goods-duc">{{item.goods_name}}</view>
+          <view class="goods-price">¥{{item.goods_price}}</view>
+        </view>
+      </navigator>
+    </view>
+  </block>
+</tabs>

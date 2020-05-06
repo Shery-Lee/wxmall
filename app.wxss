@@ -1,0 +1,8 @@
+/**app.wxss**/
+@import './styles/iconfont.wxss';
+image{
+  width:100%
+}
+.noshadow{
+  hover-class:none;
+}

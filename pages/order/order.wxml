@@ -1,0 +1,3 @@
+<tabs tabs="{{tabs}}" bind:tabsclick = "tabsclick">
+  <image mode="widthFix" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588527933605&di=f67577b8e8f8aa26c2211aa042b209cf&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fb209937dc2276a7cb5a47fb831879af25c52fa1b25567-NGX9jR_fw658"></image>
+</tabs>

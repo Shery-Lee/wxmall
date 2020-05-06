@@ -1,0 +1,48 @@
+.hui-wrap{
+  background-color: #f3f4f5;
+  display: flex;
+  padding: 30rpx 0;
+}
+.hui-item{
+  border: 1rpx solid #ccc;
+  background-color: #fff;
+  padding: 15rpx;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+.active{
+  border: 1rpx solid #eb4450;
+}
+
+.goods-item{
+  display: flex;
+  width: 100%;
+  border-bottom: 4rpx solid #ccc;
+  padding: 30rpx 0;
+}
+.left-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+.left-image image{
+  position: relative;
+  width: 70%;
+}
+.right-content{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 30rpx;
+}
+.goods-duc{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goods-price{
+  color: #eb4450;
+}

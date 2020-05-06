@@ -1,0 +1,127 @@
+page{
+  background-color: #edece8;
+}
+button{
+  position: relative;
+  width: 70%;
+  top: 40rpx;
+}
+.userinfo-wrap{
+  height: 50vh;
+  /* background-color: #eb4450; */
+  position: relative;
+  overflow: hidden;
+}
+.user-bg{
+  height: 40vh;
+  filter: blur(5rpx);
+}
+.user-info{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.user-img{
+  width: 150rpx;
+  height: 150rpx;
+}
+.user-name{
+  margin-top: 50rpx;
+  color: #fff;
+}
+.login-wrap{
+  height: 50vh;
+  /* background-color: #eb4450; */
+  position: relative;
+}
+.login-wrap navigator{
+  height: 100%;
+}
+.login-wrap navigator button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.user-content{
+  position: absolute;
+  width: 90%;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%);
+  top: 45vh;
+}
+.history-wrap{
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  padding: 20rpx 0;
+}
+.his-shoucang{
+  flex: 1;
+  font-size: 26rpx;
+}
+.his-num{
+  color: #eb4450;
+}
+
+.order-wrap{
+  background-color: #fff;
+  margin-top: 20rpx;
+  font-size: 26rpx;
+}
+.order-title{
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.order-list{
+  padding: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.order-item{
+  flex: 1;
+}
+.order-icon{
+  color: #eb4450;
+}
+.address{
+  background-color: #fff;
+  margin-top: 20rpx;
+  font-size: 26rpx;
+}
+.add-wrap{
+  padding: 20rpx ;
+}
+.other-wrap{
+  margin-top: 20rpx;
+  background-color: #fff;
+  font-size: 26rpx;
+}
+.other-list{
+  padding: 20rpx;
+}
+.kefu-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.yijian{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.share-wrap{
+  background-color: #fff;
+  font-size: 26rpx;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+}
+.share{
+  padding: 20rpx;
+}

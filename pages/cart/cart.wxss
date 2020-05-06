@@ -1,0 +1,125 @@
+page{
+  padding-bottom: 90rpx;
+}
+.address{
+  padding: 20rpx;
+}
+button{
+  width: 70%;
+}
+.user-info{
+  padding: 20rpx 10rpx;
+}
+.name-info{
+  display: flex;
+  justify-content: space-between;
+}
+.add-info{
+  font-size: 32rpx;
+}
+.cart-title{
+  font-size: 38rpx;
+  color: #eb4450;
+  padding: 20rpx;
+  border-top: 4rpx solid currentColor;
+  border-bottom: 4rpx solid currentColor;
+}
+.cart-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.cart-chk-wrap{
+  flex: 1;
+}
+.cart-img-wrap{
+  flex: 2;
+}
+.cart-img-wrap image{
+  width: 70%;
+}
+.cart-info-wrap{
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 20rpx;
+  height: 100%;
+}
+.goods-name{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 28rpx;
+}
+.goods-price-wrap{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.goods-price{
+  color: #eb4450;
+  font-size: 38rpx;
+  font-weight: 600;
+}
+.cart-num-tool{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.num-edit{
+  width: 55rpx;
+  height: 55rpx;
+  border: 2rpx solid #ccc;
+}
+.num{
+  font-size: 30rpx;
+  padding: 0 10rpx;
+}
+
+.footer-tool{
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 90rpx;
+}
+.all-chek-wrap{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.total-price-wrap{
+  flex: 4;
+  text-align: right;
+  padding-right: 20rpx;
+  font-size: 30rpx;
+}
+.price-text{
+  font-size: 36rpx;
+  color: #eb4450;
+  font-weight: 600;
+  padding-left: 20rpx;
+}
+.pay{
+  font-size: 30rpx;
+}
+.order-pay-wrap{
+  flex: 2;
+  height: 100%;
+  background-color: #eb4450;
+  color: #fff;
+  text-align: center;
+  line-height: 90rpx;
+}

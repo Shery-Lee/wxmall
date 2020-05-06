@@ -1,0 +1,84 @@
+<!--pages/profile/profile.wxml-->
+<view class="userinfo">
+  <view class="userinfo-wrap" wx:if="{{userinfo.nickName}}">
+    <image mode="widthFix" class="user-bg" mode="widthFix" src="{{userinfo.avatarUrl}}"></image>
+    <view class="user-info">
+        <image bindtap="clear" class="user-img" mode="widthFix" src="{{userinfo.avatarUrl}}"></image>
+        <view class="user-name">{{userinfo.nickName}}</view>
+    </view> 
+  </view>
+  <view class="login-wrap" wx:else>
+    <navigator url="/pages/login/login" hover-class="none">
+      <button type="primary" plain>登录</button>
+    </navigator>
+  </view>
+</view>
+<view class="user-content">
+  <view class="history-wrap">
+    <navigator hover-class="none" class="his-shoucang">
+      <view class="his-num">0</view>
+      <view class="his-text">收藏的店铺</view>
+    </navigator> 
+    <navigator hover-class="none" class="his-shoucang" url="/pages/collect/collect">
+      <view class="his-num">{{collectNum}}</view>
+      <view class="his-text">收藏的商品</view>
+    </navigator>
+    <navigator hover-class="none" class="his-shoucang">
+      <view class="his-num">0</view>
+      <view class="his-text">关注的商品</view>
+    </navigator>
+    <navigator hover-class="none" class="his-shoucang">
+      <view class="his-num">0</view>
+      <view class="his-text">我的足迹</view>
+    </navigator>
+  </view>
+
+  <view class="order-wrap">
+    <view class="order-title">我的订单</view>
+    <view class="order-list">
+      <navigator url="/pages/order/order?type=1" hover-class="none" class="order-item">
+        <view class="order-icon iconfont icon-danju"></view>
+        <view class="order-text">全部订单</view>
+      </navigator>
+      <navigator url="/pages/order/order?type=2" hover-class="none" class="order-item">
+        <view class="order-icon iconfont icon-daifukuan"></view>
+        <view class="order-text">待付款</view>
+      </navigator>
+      <navigator url="/pages/order/order?type=3" hover-class="none" class="order-item">
+        <view class="order-icon iconfont icon-daishouhuo"></view>
+        <view class="order-text">待收货</view>
+      </navigator>
+      <navigator hover-class="none" class="order-item">
+        <view class="order-icon iconfont icon-shouhou"></view>
+        <view class="order-text">退款/售后</view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="address">
+    <navigator hover-class="none" class="add-wrap">
+      收货地址管理
+    </navigator>
+  </view>
+
+  <view class="other-wrap">
+    <view class="kefu other-list">
+      <navigator hover-class="none" class="kefu-wrap">
+        <text>联系客服</text>
+        <text>400-618-4000</text>
+      </navigator>
+    </view>
+    <view class="yijian other-list">
+      <navigator hover-class="none" class="yijian-wrap">意见反馈</navigator>
+    </view>
+    <view class="about other-list">
+      <navigator hover-class="none" class="about-wrap">关于我们</navigator>
+    </view>
+  </view>
+
+  <view class="share-wrap">
+    <navigator hover-class="none" class="share">
+      把应用推荐给别人
+    </navigator>
+  </view>
+</view>
